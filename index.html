@@ -18,6 +18,7 @@
     <script src="src/js/app.js" defer></script>
   </head>
   <body>
+    <div id="backdrop"></div>
     <nav class="nav fixed-top" id="mainNav">
       <div class="navicon">
         <img src="/src/media/img logo.webp" alt="logo" />
@@ -41,14 +42,18 @@
         <a class="navlink" href="#contact">Contact</a>
       </div>
       <div>
-        <button class="btn-secondary align-middle navbtn">View Demo</button>
+        <button id="view-demo" class="btn-secondary align-middle navbtn">View Demo</button>
       </div>
-      <a href="javascript:void(0);" class="toggle-icon" onclick="toggleNavbar()">
+      <a
+        href="javascript:void(0);"
+        class="toggle-icon"
+        onclick="navbarHandler()"
+      >
         <i class="fa fa-bars"></i>
       </a>
     </nav>
     <section id="home" class="header">
-      <div class="side-label">Experience</div>
+      <div class="side-label top-experience">Experience</div>
       <div class="header-content">
         <h1>Headline 1</h1>
         <h1>Headline 2</h1>
@@ -62,7 +67,7 @@
     </section>
 
     <section id="services" class="services-component">
-      <div class="side-label">Efficiency</div>
+      <div class="side-label top-efficiency">Efficiency</div>
       <div class="services-header">
         <h1>experience means efficiency</h1>
         <p>
@@ -90,57 +95,58 @@
       </div>
     </section>
     <section id="project" class="project-component">
-      <div class="side-label">Network</div>
+      <div class="side-label top-network">Network</div>
       <div class="project-header">
         <h1>efficiency means strong network</h1>
       </div>
-
-      <div class="project-content-left">
-        <div>
-          <h1>Centers in India</h1>
-          <p>everywhere to anywhere</p>
+      <div class="project-content">
+        <div class="project-content-left">
+          <div>
+            <h1>Centers in India</h1>
+            <p>everywhere to anywhere</p>
+          </div>
+          <div>
+            <video
+              src="https://www.youtube.com/watch?v=uAOR6ib95kQ"
+              controls
+            ></video>
+          </div>
         </div>
-        <div>
-          <video
-            src="https://www.youtube.com/watch?v=uAOR6ib95kQ"
-            controls
-          ></video>
+        <div class="project-content-right">
+          <div>
+            <video
+              src="https://www.youtube.com/watch?v=uAOR6ib95kQ"
+              controls
+            ></video>
+          </div>
+          <div>
+            <h1>Order allocation Engine</h1>
+            <p>fulfill the order from & which</p>
+          </div>
         </div>
-      </div>
-      <div class="project-content-right">
-        <div>
-          <video
-            src="https://www.youtube.com/watch?v=uAOR6ib95kQ"
-            controls
-          ></video>
+        <div class="project-content-left">
+          <div>
+            <h1>Seamlessly manage</h1>
+            <p>we take care of the rest</p>
+          </div>
+          <div>
+            <video
+              src="https://www.youtube.com/watch?v=uAOR6ib95kQ"
+              controls
+            ></video>
+          </div>
         </div>
-        <div>
-          <h1>Order allocation Engine</h1>
-          <p>fulfill the order from & which</p>
-        </div>
-      </div>
-      <div class="project-content-left">
-        <div>
-          <h1>Seamlessly manage</h1>
-          <p>we take care of the rest</p>
-        </div>
-        <div>
-          <video
-            src="https://www.youtube.com/watch?v=uAOR6ib95kQ"
-            controls
-          ></video>
-        </div>
-      </div>
-      <div class="project-content-right">
-        <div>
-          <video
-            src="https://www.youtube.com/watch?v=uAOR6ib95kQ"
-            controls
-          ></video>
-        </div>
-        <div>
-          <h1>Real Technology. Real</h1>
-          <p>bit of your operations & see the magic</p>
+        <div class="project-content-right">
+          <div>
+            <video
+              src="https://www.youtube.com/watch?v=uAOR6ib95kQ"
+              controls
+            ></video>
+          </div>
+          <div>
+            <h1>Real Technology. Real</h1>
+            <p>bit of your operations & see the magic</p>
+          </div>
         </div>
       </div>
     </section>
